@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Lembra-me',
       theme: ThemeData(primarySwatch: Colors.teal),
       home: const ReminderListPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

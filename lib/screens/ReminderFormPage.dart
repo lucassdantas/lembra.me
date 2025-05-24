@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lembra_me/models/Reminder.dart';
+import 'package:lembra_me/utils/DateUtils.dart';
 
 class ReminderFormPage extends StatefulWidget {
   const ReminderFormPage({super.key});
@@ -72,7 +73,7 @@ class _ReminderFormPageState extends State<ReminderFormPage> {
               ),
               const SizedBox(height: 16),
               ListTile(
-                title: Text('Data e Hora: ${_dateTime.toString()}'),
+                title: Text('Data e Hora: ${DateUtilsHelper.formatDateTime(_dateTime)}'),
                 trailing: const Icon(Icons.calendar_today),
                 onTap: _pickDateTime,
               ),

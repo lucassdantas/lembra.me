@@ -38,7 +38,7 @@ class _ReminderListPageState extends State<ReminderListPage> {
           final r = _reminders[i];
           return ListTile(
             title: Text(r.title),
-            subtitle: Text('${r.description}\n${r.dateTime}'),
+            subtitle: Text('${r.description}\n${r.formattedDate}'),
             isThreeLine: true,
             trailing: IconButton(icon: const Icon(Icons.delete), onPressed: () => _deleteReminder(r)),
           );
