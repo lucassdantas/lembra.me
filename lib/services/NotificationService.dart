@@ -26,6 +26,7 @@ class NotificationService {
           android: AndroidNotificationDetails(
             'lembretes_channel',
             'Lembretes',
+            icon: 'ic_stat_logo',
             importance: Importance.max,
             priority: Priority.high,
           ),
